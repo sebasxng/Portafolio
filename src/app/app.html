@@ -201,7 +201,7 @@
 </div>
 <div>
 <p class="text-xs text-slate-500 uppercase font-bold tracking-wider">Email</p>
-<p class="text-slate-900 dark:text-slate-100 font-medium">juanse17hn@gmail.com</p>
+<p class="text-slate-900 dark:text-slate-100 font-medium">Sebasnhg.02@gmail.com</p>
 </div>
 </div>
 <div class="flex items-center gap-3">
@@ -216,29 +216,29 @@
 </div>
 </div>
 <div class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl">
-<form class="flex flex-col gap-4">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="flex flex-col gap-2">
-<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Nombre</label>
-<input class="bg-background-light dark:bg-background-dark border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="Samuel" type="text"/>
+<div class="flex flex-col gap-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="flex flex-col gap-2">
+      <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Nombre</label>
+      <input id="nombre" class="bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="Samuel" type="text"/>
+    </div>
+    <div class="flex flex-col gap-2">
+      <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Email</label>
+      <input id="email" class="bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="correo@ejemplo.com" type="email"/>
+    </div>
+  </div>
+  <div class="flex flex-col gap-2">
+    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Asunto</label>
+    <input id="asunto" class="bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="Asunto del mensaje" type="text"/>
+  </div>
+  <div class="flex flex-col gap-2">
+    <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Mensaje</label>
+    <textarea id="mensaje" class="bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+  </div>
+  <button id="btnEnviar" (click)="enviarMensaje()" class="bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg mt-2 transition-all shadow-lg shadow-primary/20">
+    Enviar Mensaje
+  </button>
 </div>
-<div class="flex flex-col gap-2">
-<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Email</label>
-<input class="bg-background-light dark:bg-background-dark border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="juanse17hn@gmail.com" type="email"/>
-</div>
-</div>
-<div class="flex flex-col gap-2">
-<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Asunto</label>
-<input class="bg-background-light dark:bg-background-dark border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="Asunto del mensaje" type="text"/>
-</div>
-<div class="flex flex-col gap-2">
-<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Mensaje</label>
-<textarea class="bg-background-light dark:bg-background-dark border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
-</div>
-<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg mt-2 transition-all shadow-lg shadow-primary/20" type="submit">
-                            Enviar Mensaje
-                            </button>
-</form>
 </div>
 </div>
 </section>
